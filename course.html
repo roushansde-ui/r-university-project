@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="logo.png" alt="Description of the logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Our Courses</h1>
+
+  <!-- coursese -->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Making the world a better place through education. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our intermediate programs focus on building a strong foundation for your professional career.</p>
+        </div>
+
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. We offer comprehensive degree programs recognized globally for excellence and innovation.</p>
+        </div>
+
+        <div class="course-col">
+            <h3>Post-Graduate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Advance your skills with our specialized post-graduate certifications and research opportunities.</p>
+        </div>
+    </div>
+</section>
+
+
+   <!---faclities------>
+      <section class="facilites">
+        <h1>Our facilites</h1> 
+        <p>Lorem ipsum dollor sit amet, conssectetur adipiscing elitz.</p>
+
+<div class="row">
+    <div class="facilites-col">
+        <img src="library.png">
+        <h3>World class library</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="facilites-col">
+        <img src="basketball.png">
+        <h3>Largest playground</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="facilites-col">
+        <img src="cafeteria.png">
+        <h3>Tasty and Healthy Food</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+   </section>    
+
+   <!---footer------>
+   <section class="footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet, consctetur adi</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-0">by easy toturial</i></p>
+   </section>
+
+   
+  <!-- js for toggle -->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";    
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
