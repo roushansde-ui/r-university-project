@@ -1,4 +1,6 @@
-/* Global Resets */
+/* ==========================================================================
+   1. GLOBAL RESETS & BASE STYLES
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +8,53 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
 }
 
-input, textarea, button {
+body {
+    overflow-x: hidden;
+    color: #555;
+    background-color: #fff;
+}
+
+input, textarea, button, select {
     font-family: inherit;
 }
 
-/* Base Layout & Header */
+/* Base Typography */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #0a0894;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #0a0894;
+}
+
+p {
+    color: #555;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px 0;
+}
+
+/* Flex Row Layout */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================================================
+   2. NAVIGATION & HERO HEADER
+   ========================================================================== */
 .header {
     min-height: 100vh;
     width: 100%;
@@ -67,6 +107,13 @@ nav img {
     width: 100%;
 }
 
+nav .fa, 
+nav .fa-solid, 
+nav .fa-bars {
+    display: none;
+}
+
+/* Hero Content Box */
 .text-box {
     width: 90%;
     color: #fff;
@@ -79,6 +126,7 @@ nav img {
 
 .text-box h1 {
     font-size: 62px;
+    color: #fff;
 }
 
 .text-box p {
@@ -87,6 +135,7 @@ nav img {
     color: #fff;
 }
 
+/* Buttons */
 .hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -105,31 +154,42 @@ nav img {
     background: #f44336;
 }
 
-nav .fa, nav .fa-solid, nav .fa-bars {
-    display: none;
+.red-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #f44336;
+    border: 1px solid #f44336;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-/* Shared Components */
-h1 {
-    font-size: 36px;
-    font-weight: 600;
-    color: #0a0894;
+.red-btn:hover {
+    background: #f44336;
+    color: #fff;
 }
 
-p {
-    color: #555;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px 0;
+/* Sub Header for Inner Pages */
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
 }
 
-.row {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.sub-header h1 {
+    margin-top: 50px;
+    color: #fff;
 }
+
+/* ==========================================================================
+   3. SECTION SPECIFIC STYLES
+   ========================================================================== */
 
 /* Course Section */
 .course {
@@ -151,13 +211,6 @@ p {
 
 .course-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    color: #0a0894;
 }
 
 /* Campus Section */
@@ -293,55 +346,6 @@ h3 {
     padding: 0;
 }
 
-/* Footer */
-.footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-
-.footer h4 {
-    margin-bottom: 15px;
-    margin-top: 20px;
-    font-weight: 600;
-    color: #0a0894;
-}
-
-.icons .fa-brands, 
-.icons .fa, 
-.icons .fa-solid {
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-    transition: 0.3s;
-}
-
-.icons .fa-brands:hover, 
-.icons .fa:hover {
-    transform: translateY(-3px);
-}
-
-.fa-heart {
-    color: #f44336;
-}
-
-/* Sub Header for Inner Pages */
-.sub-header {
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("background.jpg");
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-}
-
-.sub-header h1 {
-    margin-top: 50px;
-    color: #fff;
-}
-
 /* About Us Page */
 .about-us {
     width: 80%;
@@ -366,23 +370,6 @@ h3 {
     font-size: 36px;
     font-weight: 600;
     color: #0a0894;
-}
-
-.red-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #f44336;
-    border: 1px solid #f44336;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.red-btn:hover {
-    background: #f44336;
-    color: #fff;
 }
 
 /* Blog Content Page */
@@ -516,52 +503,89 @@ h3 {
     border-color: #f44336;
 }
 
-/* Responsive Styles */
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #0a0894;
+}
+
+.icons .fa-brands, 
+.icons .fa, 
+.icons .fa-solid {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    transition: 0.3s;
+}
+
+.icons .fa-brands:hover, 
+.icons .fa:hover {
+    transform: translateY(-3px);
+}
+
+.fa-heart {
+    color: #f44336;
+}
+
+/* ==========================================================================
+   4. MOBILE & TABLET MEDIA QUERIES
+   ========================================================================== */
+
+/* Tablets & Smaller Desktops (Max-width: 900px) */
+@media(max-width: 900px) {
+    .course, 
+    .campus, 
+    .facilites, 
+    .testimonials, 
+    .about-us, 
+    .blog-content, 
+    .location, 
+    .contact-us, 
+    .cta {
+        width: 90%;
+    }
+}
+
+/* Mobile Devices (Max-width: 700px) */
 @media(max-width: 700px) {
-    .text-box h1 {
-        font-size: 24px;
+    
+    /* Typography Adjustments */
+    h1 {
+        font-size: 26px;
     }
 
+    .text-box h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .text-box p {
+        font-size: 14px;
+        margin: 15px 0 25px;
+    }
+
+    .sub-header {
+        height: 35vh;
+    }
+
+    .sub-header h1 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    /* Layout Stack */
     .row {
         flex-direction: column;
-    }
-
-    .nav-links ul li {
-        display: block;
-    }
-
-    .nav-links {
-        position: fixed;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 10;
-        transition: 0.5s;
-    }
-
-    .nav-links .fa, 
-    .nav-links .fa-solid {
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    nav .fa-bars, 
-    nav .fa-solid {
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .nav-links ul {
-        padding: 30px;
+        gap: 15px;
     }
 
     .campus-col, 
@@ -573,6 +597,81 @@ h3 {
     .blog-right, 
     .contact-col {
         flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Mobile Navigation Drawer */
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 220px;
+        top: 0;
+        right: -220px;
+        text-align: left;
+        z-index: 10;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links ul {
+        padding: 60px 20px 30px;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 12px 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* Open/Close Menu Icons */
+    nav .fa-bars, 
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links .fa-times, 
+    .nav-links .fa-xmark,
+    .nav-links .fa {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    /* Testimonials Mobile View */
+    .testimonial-col {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .testimonial-col img {
+        margin: 0 auto 15px;
+    }
+
+    /* Contact & Form Inputs (Prevent iOS zoom) */
+    .contact-col input, 
+    .contact-col textarea,
+    .comment-form input,
+    .comment-form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .location iframe {
+        height: 300px;
     }
 
     .cta h1 {
