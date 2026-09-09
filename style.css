@@ -9,12 +9,11 @@ body {
     overflow-x: hidden;
 }
 
-/* --- Header Section --- */
+/* Header Section */
 .header {
     min-height: 100vh;
     width: 100%;
-    /* Check karein extension .png hai ya .jpg */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/banner.png');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('banner.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -23,7 +22,7 @@ body {
 .sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(banner2.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('banner.png');
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -34,7 +33,7 @@ body {
     margin-top: 50px;
 }
 
-/* --- Navigation --- */
+/* Navigation */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -83,7 +82,7 @@ nav .fa-xmark {
     display: none;
 }
 
-/* --- Hero Text Box --- */
+/* Hero Text Box */
 .text-box {
     width: 90%;
     color: #fff;
@@ -104,7 +103,7 @@ nav .fa-xmark {
     color: #fff;
 }
 
-/* --- Buttons --- */
+/* Buttons */
 .hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -135,7 +134,7 @@ nav .fa-xmark {
     background: #f44336;
 }
 
-/* --- Content Sections --- */
+/* General Layout Sections */
 .course, .campus, .facilities, .testimonials {
     width: 80%;
     margin: auto;
@@ -162,7 +161,7 @@ p {
     justify-content: space-between;
 }
 
-/* --- Course Section --- */
+/* Course Section */
 .course-col {
     flex-basis: 31%;
     background: #fff3f3;
@@ -183,7 +182,7 @@ h3 {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Campus Section --- */
+/* Campus Section */
 .campus-col {
     flex-basis: 32%;
     border-radius: 10px;
@@ -229,7 +228,7 @@ h3 {
     opacity: 1;
 }
 
-/* --- Facilities Section --- */
+/* Facilities Section */
 .facilities-col {
     flex-basis: 31%;
     border-radius: 10px;
@@ -252,7 +251,7 @@ h3 {
     text-align: left;
 }
 
-/* --- Testimonials --- */
+/* Testimonials */
 .testimonial-col {
     flex-basis: 44%;
     border-radius: 10px;
@@ -285,11 +284,11 @@ h3 {
     color: #f44336;
 }
 
-/* --- Call To Action --- */
+/* Call To Action */
 .cta {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(banner2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('banner.png');
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -303,7 +302,7 @@ h3 {
     padding: 0;
 }
 
-/* --- Footer --- */
+/* Footer */
 .footer {
     width: 100%;
     text-align: center;
@@ -324,7 +323,7 @@ h3 {
     padding: 18px 0;
 }
 
-/* --- Responsive Layout --- */
+/* Responsive Media Query */
 @media(max-width: 700px) {
     .text-box h1 {
         font-size: 20px;
