@@ -6,20 +6,19 @@
 }
 
 body {
-    overflow-x: hidden; /* Screen ke bahar overflow hone aur horizontal scroll bar se rokne ke liye */
+    overflow-x: hidden;
 }
 
-/* --- Main Header (Index / Home Page) --- */
+/* --- Header Section --- */
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(banner.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-/* --- Sub Header (Contact / About / Other Pages) --- */
 .sub-header {
     height: 50vh;
     width: 100%;
@@ -34,7 +33,7 @@ body {
     margin-top: 50px;
 }
 
-/* --- Navigation Bar --- */
+/* --- Navigation --- */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -135,7 +134,7 @@ nav .fa-xmark {
     background: #f44336;
 }
 
-/* --- Sections Common Layout --- */
+/* --- Content Sections --- */
 .course, .campus, .facilities, .testimonials {
     width: 80%;
     margin: auto;
@@ -252,7 +251,7 @@ h3 {
     text-align: left;
 }
 
-/* --- Testimonials Section --- */
+/* --- Testimonials --- */
 .testimonial-col {
     flex-basis: 44%;
     border-radius: 10px;
@@ -285,7 +284,7 @@ h3 {
     color: #f44336;
 }
 
-/* --- Call To Action (CTA) --- */
+/* --- Call To Action --- */
 .cta {
     margin: 100px auto;
     width: 80%;
@@ -301,61 +300,6 @@ h3 {
     color: #fff;
     margin-bottom: 40px;
     padding: 0;
-}
-
-/* --- Location Map Section --- */
-.location {
-    width: 80%;
-    margin: 80px auto;
-}
-
-.location iframe {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* --- Contact Us Section --- */
-.contact-us {
-    width: 80%;
-    margin: 50px auto;
-}
-
-.contact-col {
-    flex-basis: 48%;
-    margin-bottom: 30px;
-}
-
-.contact-col div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.contact-col div .fa-solid {
-    font-size: 28px;
-    color: #f44336;
-    margin: 10px 30px 10px 10px;
-}
-
-.contact-col div p {
-    padding: 0;
-    color: #555;
-}
-
-.contact-col div h5 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #555;
-    font-weight: 400;
-}
-
-.contact-col input,
-.contact-col textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 17px;
-    outline: none;
-    border: 1px solid #ccc;
 }
 
 /* --- Footer --- */
@@ -379,7 +323,7 @@ h3 {
     padding: 18px 0;
 }
 
-/* --- Mobile / Tablet Responsiveness --- */
+/* --- Responsive Layout --- */
 @media(max-width: 700px) {
     .text-box h1 {
         font-size: 20px;
@@ -429,7 +373,7 @@ h3 {
         flex-direction: column;
     }
 
-    .course-col, .campus-col, .facilities-col, .testimonial-col, .contact-col {
+    .course-col, .campus-col, .facilities-col, .testimonial-col {
         flex-basis: 100%;
     }
 
