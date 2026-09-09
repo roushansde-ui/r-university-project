@@ -3,86 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website Design</title>
+    <title>University Website Design - About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Header Section -->
     <section class="sub-header">
         <nav>
             <a href="index.html">
-                <img src="logo.png" alt="Description of the logo"></a>
+                <img src="logo.png" alt="University Logo">
+            </a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
-
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contract.html">CONTRACT  Us</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
-
         </nav>
         <h1>About Us</h1>
-
-        <!----------about us content--------->
-
-     <section class="about-us">
-       
-        <div class="row">
-            <div class="about-col">
-           <h1>we are the world's largest university</h1>
-           <p>A paragraph is a group of sentences or a single sentence that forms a unit, focusing on one central
-             idea or topic. It serves as a building block for writing, with a structure usually comprising a topic
-            sentence, supporting details, and a concluding sentence. Paragraphs provide structure, coherence, and a 
-            necessary break for readers</p>
-            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>   
-         </div>
-         <div class="about-col">
-            <img src="about.jpg">
-         </div>
-         </div>
-
-        
-
     </section>
 
-  <!-- coursese -->
+    <!-- About Us Content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>We empower students around the globe through accessible, high-quality education and practical hands-on experience. Our programs foster critical thinking, technical proficiency, and global networking opportunities to prepare you for future industry demands.</p>
+                <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>   
+            </div>
+            <div class="about-col">
+                <img src="about.jpg" alt="About Us Campus View">
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Empowering learners worldwide through accessible, quality education.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Easy Tutorials</p>
+    </section>
 
-
-   <!---footer------>
-   <section class="footer">
-      <h4>About Us</h4>
-      <p>Lorem ipsum dolor sit amet, consctetur adi</p>
-      <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
-      <p>Made with <i class="fa fa-heart-0">by easy toturial</i></p>
-   </section>
-
-   
-  <!-- js for toggle -->
-<script>
-    var navLinks =document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";    
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
-
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";    
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
 </body>
 </html>
